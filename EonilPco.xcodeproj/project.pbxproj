@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4517CF441E2B31A200C43464 /* ADHOC_AtomicBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF421E2B31A200C43464 /* ADHOC_AtomicBool.swift */; };
 		4517CF451E2B31A200C43464 /* ADHOC_AtomicInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF431E2B31A200C43464 /* ADHOC_AtomicInt.swift */; };
-		4517CF471E2B34BD00C43464 /* PThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF461E2B34BD00C43464 /* PThreadMutex.swift */; };
+		4517CF471E2B34BD00C43464 /* POSIXThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF461E2B34BD00C43464 /* POSIXThread.swift */; };
 		4517CF5F1E2B4DF700C43464 /* Pco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF5E1E2B4DF700C43464 /* Pco.swift */; };
 		4517CF611E2B4E0800C43464 /* PcoIOChannelSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF601E2B4E0800C43464 /* PcoIOChannelSet.swift */; };
 		4517CF631E2B4E1C00C43464 /* PcoAnyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF621E2B4E1C00C43464 /* PcoAnyChannel.swift */; };
@@ -17,18 +17,30 @@
 		4517CF691E2B4E2F00C43464 /* PcoChannel+map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF651E2B4E2F00C43464 /* PcoChannel+map.swift */; };
 		4517CF6A1E2B4E2F00C43464 /* PcoChannel+bufferedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF661E2B4E2F00C43464 /* PcoChannel+bufferedMap.swift */; };
 		4517CF6B1E2B4E2F00C43464 /* PcoDebugReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF671E2B4E2F00C43464 /* PcoDebugReport.swift */; };
-		4517CF6E1E2B521D00C43464 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF6C1E2B521800C43464 /* LICENSE.md */; };
-		4517CF6F1E2B521D00C43464 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF6D1E2B521800C43464 /* README.md */; };
+		4517CF761E2B5A6600C43464 /* PcoMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF701E2B59D800C43464 /* PcoMappingTests.swift */; };
+		4517CF771E2B5A6900C43464 /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF721E2B59E600C43464 /* XCTestCaseExtensions.swift */; };
+		4517CF781E2B5A6D00C43464 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF741E2B59F600C43464 /* Utilities.swift */; };
+		4517CF7A1E2B5D6C00C43464 /* SystemVSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517CF791E2B5D6C00C43464 /* SystemVSemaphore.swift */; };
 		OBJ_26 /* PcoChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* PcoChannel.swift */; };
 		OBJ_27 /* PcoThreadChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* PcoThreadChannel.swift */; };
 		OBJ_28 /* PcoThreadSignalWaiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* PcoThreadSignalWaiter.swift */; };
-		OBJ_42 /* pco_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* pco_swiftTests.swift */; };
+		OBJ_42 /* PcoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* PcoTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4517CF7D1E2B701900C43464 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_21;
+			remoteInfo = EonilPco;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4517CF421E2B31A200C43464 /* ADHOC_AtomicBool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADHOC_AtomicBool.swift; sourceTree = "<group>"; };
 		4517CF431E2B31A200C43464 /* ADHOC_AtomicInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADHOC_AtomicInt.swift; sourceTree = "<group>"; };
-		4517CF461E2B34BD00C43464 /* PThreadMutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PThreadMutex.swift; sourceTree = "<group>"; };
+		4517CF461E2B34BD00C43464 /* POSIXThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSIXThread.swift; sourceTree = "<group>"; };
 		4517CF5E1E2B4DF700C43464 /* Pco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pco.swift; sourceTree = "<group>"; };
 		4517CF601E2B4E0800C43464 /* PcoIOChannelSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PcoIOChannelSet.swift; sourceTree = "<group>"; };
 		4517CF621E2B4E1C00C43464 /* PcoAnyChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PcoAnyChannel.swift; sourceTree = "<group>"; };
@@ -38,11 +50,15 @@
 		4517CF671E2B4E2F00C43464 /* PcoDebugReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PcoDebugReport.swift; sourceTree = "<group>"; };
 		4517CF6C1E2B521800C43464 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		4517CF6D1E2B521800C43464 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4517CF701E2B59D800C43464 /* PcoMappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PcoMappingTests.swift; sourceTree = "<group>"; };
+		4517CF721E2B59E600C43464 /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
+		4517CF741E2B59F600C43464 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		4517CF791E2B5D6C00C43464 /* SystemVSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemVSemaphore.swift; sourceTree = "<group>"; };
 		OBJ_10 /* PcoThreadChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PcoThreadChannel.swift; sourceTree = "<group>"; };
 		OBJ_11 /* PcoThreadSignalWaiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PcoThreadSignalWaiter.swift; sourceTree = "<group>"; };
-		OBJ_16 /* pco_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pco_swiftTests.swift; sourceTree = "<group>"; };
+		OBJ_16 /* PcoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PcoTests.swift; sourceTree = "<group>"; };
 		OBJ_18 /* EonilPco.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EonilPco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_20 /* pco_swiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = pco_swiftTests.xctest; path = pco.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_20 /* pco.swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = pco.swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* PcoChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PcoChannel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,30 +84,33 @@
 		OBJ_14 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* pco.swiftTests */,
+				OBJ_15 /* EonilPcoTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		OBJ_15 /* pco.swiftTests */ = {
+		OBJ_15 /* EonilPcoTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* pco_swiftTests.swift */,
+				OBJ_16 /* PcoTests.swift */,
+				4517CF701E2B59D800C43464 /* PcoMappingTests.swift */,
+				4517CF721E2B59E600C43464 /* XCTestCaseExtensions.swift */,
+				4517CF741E2B59F600C43464 /* Utilities.swift */,
 			);
-			name = pco.swiftTests;
-			path = Tests/pco.swiftTests;
+			name = EonilPcoTests;
+			path = Tests/EonilPcoTests;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_18 /* EonilPco.framework */,
-				OBJ_20 /* pco_swiftTests.xctest */,
+				OBJ_20 /* pco.swiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				4517CF6D1E2B521800C43464 /* README.md */,
@@ -101,7 +120,6 @@
 				OBJ_14 /* Tests */,
 				OBJ_17 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -127,7 +145,8 @@
 				4517CF671E2B4E2F00C43464 /* PcoDebugReport.swift */,
 				4517CF421E2B31A200C43464 /* ADHOC_AtomicBool.swift */,
 				4517CF431E2B31A200C43464 /* ADHOC_AtomicInt.swift */,
-				4517CF461E2B34BD00C43464 /* PThreadMutex.swift */,
+				4517CF791E2B5D6C00C43464 /* SystemVSemaphore.swift */,
+				4517CF461E2B34BD00C43464 /* POSIXThread.swift */,
 			);
 			name = EonilPco;
 			path = Sources/EonilPco;
@@ -152,9 +171,9 @@
 			productReference = OBJ_18 /* EonilPco.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_37 /* pco.swiftTests */ = {
+		OBJ_37 /* EonilPcoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "pco.swiftTests" */;
+			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "EonilPcoTests" */;
 			buildPhases = (
 				OBJ_41 /* Sources */,
 				OBJ_43 /* Frameworks */,
@@ -162,10 +181,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				4517CF7E1E2B701900C43464 /* PBXTargetDependency */,
 			);
-			name = pco.swiftTests;
+			name = EonilPcoTests;
 			productName = pco_swiftTests;
-			productReference = OBJ_20 /* pco_swiftTests.xctest */;
+			productReference = OBJ_20 /* pco.swiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -183,13 +203,13 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				OBJ_21 /* EonilPco */,
-				OBJ_37 /* pco.swiftTests */,
+				OBJ_37 /* EonilPcoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +225,12 @@
 				OBJ_26 /* PcoChannel.swift in Sources */,
 				4517CF6B1E2B4E2F00C43464 /* PcoDebugReport.swift in Sources */,
 				4517CF6A1E2B4E2F00C43464 /* PcoChannel+bufferedMap.swift in Sources */,
-				4517CF6E1E2B521D00C43464 /* LICENSE.md in Sources */,
 				4517CF611E2B4E0800C43464 /* PcoIOChannelSet.swift in Sources */,
 				OBJ_27 /* PcoThreadChannel.swift in Sources */,
+				4517CF7A1E2B5D6C00C43464 /* SystemVSemaphore.swift in Sources */,
 				4517CF691E2B4E2F00C43464 /* PcoChannel+map.swift in Sources */,
-				4517CF471E2B34BD00C43464 /* PThreadMutex.swift in Sources */,
+				4517CF471E2B34BD00C43464 /* POSIXThread.swift in Sources */,
 				4517CF5F1E2B4DF700C43464 /* Pco.swift in Sources */,
-				4517CF6F1E2B521D00C43464 /* README.md in Sources */,
 				OBJ_28 /* PcoThreadSignalWaiter.swift in Sources */,
 				4517CF681E2B4E2F00C43464 /* PcoGCDChannel.swift in Sources */,
 			);
@@ -221,11 +240,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_42 /* pco_swiftTests.swift in Sources */,
+				4517CF771E2B5A6900C43464 /* XCTestCaseExtensions.swift in Sources */,
+				OBJ_42 /* PcoTests.swift in Sources */,
+				4517CF781E2B5A6D00C43464 /* Utilities.swift in Sources */,
+				4517CF761E2B5A6600C43464 /* PcoMappingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4517CF7E1E2B701900C43464 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_21 /* EonilPco */;
+			targetProxy = 4517CF7D1E2B701900C43464 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		OBJ_23 /* Debug */ = {
@@ -365,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_38 /* Build configuration list for PBXNativeTarget "pco.swiftTests" */ = {
+		OBJ_38 /* Build configuration list for PBXNativeTarget "EonilPcoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_39 /* Debug */,

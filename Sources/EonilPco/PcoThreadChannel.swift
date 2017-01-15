@@ -32,6 +32,10 @@ final class PcoThreadChannel<T>: PcoChannel {
     private var slot = T?.none
     private let is_open_flag_store = ADHOC_AtomicBool(true)
 
+    deinit {
+        // Now only one thread is accessing this channel object.
+        assert(slot == nil)
+    }
     func send(_ signal: T?) {
         guard is_open_flag_store.state else { return precondition(signal == nil, "You cannot send a non-nil value on a closed channel.") }
         sendLock.lock()
@@ -59,9 +63,11 @@ final class PcoThreadChannel<T>: PcoChannel {
             // Cannot enter before sending done.
             phase.lock(whenCondition: SEND_DONE)
             r = slot
+            slot = nil
             phase.unlock(withCondition: RECV_DONE)
         }
         else {
+            assert(slot == nil)
             r = nil
         }
         recvLock.unlock()

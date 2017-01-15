@@ -1,8 +1,16 @@
+//
+//  PcoTests.swift
+//  EonilPco
+//
+//  Created by Hoon H. on 2017/01/15.
+//
+//
+
 import Foundation
 import XCTest
 @testable import EonilPco
 
-class pco_swiftTests: XCTestCase {
+class PcoTests: XCTestCase {
     func testPcoThreadSignalWaiter() {
         let d1 = measureDuration {
             let w1 = PcoThreadSignalWaiter()
@@ -119,13 +127,13 @@ class pco_swiftTests: XCTestCase {
     func testPcoThreadChannelTransferringManySignalsWithManyThreads0001Time() {
         testPcoThreadChannelTransferringManySignalsWithManyThreads()
     }
-    func testPcoThreadChannelTransferringManySignalsWithManyThreads1024Times() {
-        for i in 0..<32 {
-            print("hard test session\(i) started.")
-            testPcoThreadChannelTransferringManySignalsWithManyThreads() { _ in }
-            print("hard test session\(i) ended.")
-        }
-    }
+//    func testPcoThreadChannelTransferringManySignalsWithManyThreads1024Times() {
+//        for i in 0..<32 {
+//            print("hard test session\(i) started.")
+//            testPcoThreadChannelTransferringManySignalsWithManyThreads() { _ in }
+//            print("hard test session\(i) ended.")
+//        }
+//    }
     func testChannelSequence() {
         let exp = expectation(description: "done")
         let w1 = PcoThreadSignalWaiter()
@@ -152,28 +160,6 @@ class pco_swiftTests: XCTestCase {
         exp.fulfill()
         waitForExpectations(timeout: 60)
     }
-
-    static var allTests : [(String, (pco_swiftTests) -> () throws -> Void)] {
-        return [
-            ("testPcoThreadChannelTransfer", testPcoThreadChannelTransfer),
-        ]
-    }
-}
-
-extension XCTestCase {
-    func waitForExpectations(timeout: TimeInterval) {
-        waitForExpectations(timeout: timeout) { (_ e: Error?) in
-            XCTAssert(e == nil, "error: \(e!)")
-        }
-    }
-}
-
-private func measureDuration(_ f: () -> ()) -> TimeInterval {
-    let startTimepoint = Date()
-    f()
-    let endTimepoint = Date()
-    let duration = endTimepoint.timeIntervalSince(startTimepoint)
-    return duration
 }
 
 private func naivePrint(_ s: String) {

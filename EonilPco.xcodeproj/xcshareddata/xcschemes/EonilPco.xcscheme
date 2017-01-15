@@ -48,7 +48,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "OBJ_37"
                BuildableName = "pco.swiftTests.xctest"
-               BlueprintName = "pco.swiftTests"
+               BlueprintName = "EonilPcoTests"
                ReferencedContainer = "container:EonilPco.xcodeproj">
             </BuildableReference>
          </TestableReference>
